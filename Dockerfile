@@ -17,6 +17,7 @@ ADD deploy/run/solr.sh /etc/service/solr/run
 RUN mkdir /data && cp -r /opt/solr/example /data/solr
 RUN useradd --home-dir /data/solr --comment "Solr Server" solr
 RUN chown -R solr:solr /data/solr
+VOLUME /data
 
 EXPOSE 8983
 WORKDIR /data/solr
