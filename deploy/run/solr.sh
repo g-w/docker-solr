@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd /opt/solr/example
+cd /data/solr
 set -ex
 exec /sbin/setuser solr /usr/bin/java -jar start.jar
